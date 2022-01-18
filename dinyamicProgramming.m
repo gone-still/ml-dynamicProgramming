@@ -17,6 +17,7 @@ clear all;
 B = 'tree';
 A = 'three';
 
+% "Normalization factor":
 maxValue = 2;
 maxLength = strlength( A );
 
@@ -108,12 +109,13 @@ for y = 2:dpRows
             bNumber = str2double( currentBChar );
             
             % NaN?
+            % This bit only computes a "normalized" score
+            % between two numerical characters:
             if ( ~isnan(aNumber) && ~isnan(bNumber) )
                 % Value difference:
                 numDifference = abs( aNumber - bNumber );
                 % Normalization:
-                numNormalization = numDifference/maxValue;
-                
+                numNormalization = numDifference / maxValue;
                 scoreMatrix(y,x) = numNormalization;
                 
             end
