@@ -1,5 +1,5 @@
 # ml-dynamicPrograming
-A custom Dynamic Programming (DP) Matlab script that measure distance (or similarity) between two strings.
+A custom Dynamic Programming (DP) MATLAB script that measure distance (or similarity) between two strings.
 The script tries to map out the number of operations (Matches, Replacements, Insertions and Deletions) into a numerical score value.
 
 Some test strings and their scores:
